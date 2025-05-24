@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>手作飾品市場調查問卷</title>
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+      background: #fefefe;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    form {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    .checkbox-group input,
+    .radio-group input {
+      margin-right: 6px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 30px;
+      padding: 15px;
+      background: #e8f5e9;
+      border-left: 4px solid #4CAF50;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>手作飾品市場調查問卷</h1>
+  <form id="surveyForm"
+    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeHzEeM7cqEg16_to_-TV2qX3KNwJzGj7KmZrE6bwTaeCl9Pw/formResponse" method="POST">
+    <label for="name">請填寫您的姓名</label>
+    <input type="text" id="name" name="entry.592023729">
+
+    <label>您平時喜歡配戴哪種類型的飾品？（可複選）</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="entry.1299681975" value="項鍊"> 項鍊</label>
+      <label><input type="checkbox" name="entry.1299681975" value="手鍊 / 手環"> 手鍊 / 手環</label>
+      <label><input type="checkbox" name="entry.1299681975" value="戒指"> 戒指</label>
+      <label><input type="checkbox" name="entry.1299681975" value="耳環"> 耳環</label>
+      <label><input type="checkbox" name="entry.1299681975" value="髮飾"> 髮飾</label>
+    </div>
+
+    <label>您偏好的飾品風格是？（可複選）</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="entry.183144849" value="簡約極簡風"> 簡約極簡風</label>
+      <label><input type="checkbox" name="entry.183144849" value="文青手作風"> 文青手作風</label>
+      <label><input type="checkbox" name="entry.183144849" value="韓系甜美風"> 韓系甜美風</label>
+      <label><input type="checkbox" name="entry.183144849" value="日系可愛風"> 日系可愛風</label>
+      <label><input type="checkbox" name="entry.183144849" value="復古古典風"> 復古古典風</label>
+      <label><input type="checkbox" name="entry.183144849" value="個性暗黑風"> 個性暗黑風</label>
+    </div>
+
+    <label>您可以接受的預算範圍是？（單選）</label>
+    <div class="radio-group">
+      <label><input type="radio" name="entry.1222072713" value="$100 以下"> $100 以下</label>
+      <label><input type="radio" name="entry.1222072713" value="$100 ~ $300"> $100 ~ $300</label>
+      <label><input type="radio" name="entry.1222072713" value="$300 ~ $500"> $300 ~ $500</label>
+      <label><input type="radio" name="entry.1222072713" value="$500 ~ $1,000"> $500 ~ $1,000</label>
+      <label><input type="radio" name="entry.1222072713" value="$1,000 以上"> $1,000 以上</label>
+    </div>
+
+    <label>有什麼想對我們說的嗎？</label>
+    <textarea name="feedback" rows="4" placeholder="請輸入您的建議或喜好款式..."></textarea>
+
+    <button type="submit">送出問卷</button>
+  </form>
+
+  <div class="result" id="result" style="display:none"></div>
+ 
+</body>
+</html>
